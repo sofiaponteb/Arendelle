@@ -1,0 +1,123 @@
+@charset "UFT-8" ;
+
+@font-face { /* tipo de letra para los títulos*/
+    font-family: Cinzel_Decorative ;
+    src: url('fonts/Cinzel_Decorative/CinzelDecorative-Bold.ttf') ;
+}
+
+@font-face { /* tipo de letra para los títulos*/
+    font-family: Cinzel ;
+    src: url('fonts/Cinzel/Cinzel-VariableFont_wght.ttf') ;
+}
+
+@font-face { /* tipo de letra para el texto*/
+    font-family: Poppins;
+    src: url('fonts/Poppins/Poppins-Medium.ttf');
+}
+
+body { /* imagen de fondo */ 
+    background-color: #006AA3;
+    background-image: url(imagenes/Frozen-2-Wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+h1{ /*estilo para titulos*/
+    font-family: Cinzel ;
+    font-weight: bolder;
+    color: #551A8B;
+    font-size: 100px;
+    text-align: center;
+    margin: auto;
+
+}
+
+h1:link { /* para que no subraye los vínculos*/ 
+	color:#551A8B;
+	cursor: pointer;
+	text-decoration: none;  
+}
+
+a:link { /* para que no subraye los vínculos */ 
+	color: #551A8B;
+	text-decoration:none;
+}
+
+a:hover {    /* estilo cuando el cursor está sobre el elemento */ 
+	color: #BC88B9;
+}
+
+.texto{ /*estilo para texto*/
+    font-family: Poppins ;
+    color: black;
+    /*background: rgba(255, 255, 255, 0.5) ;*/
+    text-align: justify;
+}
+
+.menunav{ /* estilo para la caja de navegación */
+    font-family: Cinzel ;
+    color: snow;
+    text-align: center;
+    font-size: large;
+    font-weight: bolder;
+    margin-bottom: 20pt;
+}
+
+/* cajita con fondo blanco*/
+.cajita {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.5) ;
+    margin-left: 150pt;
+    margin-right: 150pt;
+    /*margin-top: 20pt ;*/
+    padding-top: 20pt;
+    padding-bottom: 20pt ;
+    padding-right: 20pt ;
+    padding-left: 20pt ;
+}
+
+
+
+/* botones lindos para la barra de navegación*/
+.botonMenu {
+	box-shadow: 3px 0px 27px 7px #ffffff;
+	background-color:transparent;
+	border-radius:42px;
+	border:3px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#541a8b;
+	font-family:Poppins;
+	font-size:18px;
+	font-weight:bold;
+	padding:7px 59px;
+	text-decoration:none;
+}
+.botonMenu:hover { /* para que se ponga bonito al acercar el cursor */
+	background-color:white;
+}
+.botonMenu:active {
+	position:relative;
+	top:1px;
+}
+
+h2{ /*estilo para subtitulos*/
+    font-family: Cinzel ;
+    font-weight: bold;
+    color: #551A8B;
+    font-size: 65px;
+    text-align: left;
+    margin: auto;
+    margin-left: 150pt;
+}
+
+.footer{ /*estilo para texto*/
+    font-family: Poppins ;
+    color:thistle;
+    text-align: center;
+}
+
+.volver{
+    margin-right: 0%;
+    margin-left: 80%;
+}
