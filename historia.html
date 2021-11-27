@@ -8,33 +8,52 @@ Nacional de Colombia 2021-2 -->
         <meta charset = "UTF-8" > <!-- configuración de idioma -->
         <meta lang = "es" >
         <title> Arendelle - Historia </title>
-        <link href="estilos.css" rel = "stylesheet" type="text/css"> <!-- llamo los estilos-->
         <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon" > <!-- icono de la pestaña-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> <!-- link de bootstrap-->
+        <link href="estilos.css" rel = "stylesheet" type="text/css"> <!-- llamo los estilos-->
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
     </head>
 
     <body>
-        <h1> <a href="index.html" target = "_self"> ARENDELLE </a> </h1><!-- título -->
-        
-        <nav class="menunav"> <!-- menu de navegacion-->
-            <a class = "botonMenu" href = "ubicacion.html" target="_self"> Ubicación</a>
-            <a class = "botonMenu" href = "personajes.html" target="_self"> Personajes</a>
-            <a class = "botonMenu" href = "actividades.html" target="_self"> Actividades</a>
-            <a class = "botonMenu" href = "historia.html" target="_self"> Historia</a>
-            <a class = "botonMenu" href = "referencias.html" target="_self"> Referencias</a>
-        </nav>
+        <h1> <a href="index.html" target = "_self"> ARENDELLE </a> </h1> <!-- título -->
+        <header> 
+                <input type="checkbox" id="btn-menunav"> <!-- asigno la checkbox del menu-->
+                <label for="btn-menunav" class = "botonMenunav"> ☰ </label> <!-- asigno el boton al menu -->
+                <nav class="menunav"> <!-- menu de navegacion-->
+                        <a class = "botonMenu" href = "ubicacion.html" target="_self"> Ubicación</a>
+                        <a class = "botonMenu" href = "personajes.html" target="_self"> Personajes</a>
+                        <a class = "botonMenu" href = "actividades.html" target="_self"> Actividades</a>
+                        <a class = "botonMenu" href = "historia.html" target="_self"> Historia</a>
+                        <a class = "botonMenu" href = "referencias.html" target="_self"> Referencias/Mapa</a>
+                </nav>
+        </header>
        
         <h2> Historia </h2><!-- subtítulo -->
-       <div class = "cajita"> <!-- pone el fondo blanco -->
-        <p class="texto"><a href="https://www.youtube.com/watch?v=61wIEF8s_Ow" target="_blank"> https://www.youtube.com/watch?v=61wIEF8s_Ow </a></p>
-        <p class="texto"> Historia contada por el Rey Agnar:<br> Tan al norte como podemos ir, estaba un muy viejo y muy encantado
-            bosque, pero su magia no era la de los hechizos de los goblins y las hadas perdidas, estaba protegido por los espíritus más poderosos de todos los del aire, el fuego, el agua y la tierra, pero también era el hogar del misterioso pueblo Nortuldhra con un ultra mágicos no Elsa no eran mágicos solo aprovecharon los obsequios de los bosques sus caminos eran tan diferentes a los nuestros pero aun así nos prometieron amistad en honor a eso tu abuelo el rey arte de la luna les construyó un maldito poderoso para fortalecer sus aguas fue un regalo de paz y me sentí muy honrado de poder ir al bosque para celebrar su baile todo lo que sé, no estaba del todo preparado para lo que traería el día, bajamos la guardia, estábamos encantados, se sentía tan mágico, pero algo salió mal. nos estaban atacando por detrás fue una batalla brutal tu abuelo estaba perdido la lucha enfureció a los espíritus ellos volvieron su magia contra todos nosotros allí estaba esta voz y alguien me salvó incontables los espíritus luego desaparecieron y una poderosa niebla cubrió el bosque lo Sacando a todos y esa noche llegué a casa rey de Arendelle.</p>
-        <img src="imagenes/historia.PNG"  width = "700" alt="">
-        <p class = "texto"> </p> 
-        <img src="imagenes/represa.PNG"  width = "700" alt="">
-        <p class = "texto"> </p> 
-        <img src="imagenes/bosque.PNG"  width = "700" alt="">
-        <p class = "texto"> </p> 
-    </div>
+
+        <div class = "row justify-content-center" >
+            <div class = "cajita col-11 col-md-10 col-xl-10"> <!-- pone el fondo blanco -->
+                <div class ="row justify-content-center">
+                    <div class = "col-12">
+                    <p class="texto"><a href="https://www.youtube.com/watch?v=61wIEF8s_Ow" target="_blank"> https://www.youtube.com/watch?v=61wIEF8s_Ow </a></p>
+                    </div>
+                    <div class = "col-11 col-md-10 col-xl-12">
+                    <p class="texto"> Historia contada por el Rey Agnar:<br> Tan al norte como podemos ir, estaba un muy viejo y muy encantado
+                        bosque, pero su magia no era la de los hechizos de los goblins y las hadas perdidas, estaba protegido por los espíritus más poderosos de todos los del aire, el fuego, el agua y la tierra, pero también era el hogar del misterioso pueblo Nortuldhra con un ultra mágicos no Elsa no eran mágicos solo aprovecharon los obsequios de los bosques sus caminos eran tan diferentes a los nuestros pero aun así nos prometieron amistad en honor a eso tu abuelo el rey arte de la luna les construyó un maldito poderoso para fortalecer sus aguas fue un regalo de paz y me sentí muy honrado de poder ir al bosque para celebrar su baile todo lo que sé, no estaba del todo preparado para lo que traería el día, bajamos la guardia, estábamos encantados, se sentía tan mágico, pero algo salió mal. nos estaban atacando por detrás fue una batalla brutal tu abuelo estaba perdido la lucha enfureció a los espíritus ellos volvieron su magia contra todos nosotros allí estaba esta voz y alguien me salvó incontables los espíritus luego desaparecieron y una poderosa niebla cubrió el bosque lo Sacando a todos y esa noche llegué a casa rey de Arendelle.</p>
+                    </div>
+                    <div class = "col-12 col-md-8 col-xl-10"> 
+                        <img class="imagen" src="imagenes/historia.PNG"  width = "700" alt="">
+                    </div>
+                    <p class = "texto"> </p> 
+                    <div class = "col-12 col-md-8 col-xl-10"> 
+                        <img class="imagen" src="imagenes/represa.PNG"  width = "700" alt="">
+                    </div>
+                    <p class = "texto"> </p> 
+                    <div class = "col-12 col-md-8 col-xl-10"> 
+                        <img class="imagen" src="imagenes/bosque.PNG"  width = "700" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
 
     <p class="footer"> Elaborado por: Ana Sofia Aponte Barriga</p>
 

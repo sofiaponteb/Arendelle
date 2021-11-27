@@ -8,34 +8,62 @@ Nacional de Colombia 2021-2 -->
         <meta charset = "UTF-8" > <!-- configuración de idioma -->
         <meta lang = "es" >
         <title> Arendelle - Actividades </title>
-        <link href="estilos.css" rel = "stylesheet" type="text/css"> <!-- llamo los estilos-->
         <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon" > <!-- icono de la pestaña-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> <!-- link de bootstrap-->
+        <link href="estilos.css" rel = "stylesheet" type="text/css"> <!-- llamo los estilos-->
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
     </head>
 
     <body>
         <h1> <a href="index.html" target = "_self"> ARENDELLE </a> </h1><!-- título -->
         
-        <nav class="menunav"> <!-- menu de navegacion-->
-            <a class = "botonMenu" href = "ubicacion.html" target="_self"> Ubicación</a>
-            <a class = "botonMenu" href = "personajes.html" target="_self"> Personajes</a>
-            <a class = "botonMenu" href = "actividades.html" target="_self"> Actividades</a>
-            <a class = "botonMenu" href = "historia.html" target="_self"> Historia</a>
-            <a class = "botonMenu" href = "referencias.html" target="_self"> Referencias</a>
-        </nav>
+        <header> 
+            <input type="checkbox" id="btn-menunav"> <!-- asigno la checkbox del menu-->
+            <label for="btn-menunav" class = "botonMenunav"> ☰ </label> <!-- asigno el boton al menu -->
+            <nav class="menunav"> <!-- menu de navegacion-->
+                    <a class = "botonMenu" href = "ubicacion.html" target="_self"> Ubicación</a>
+                    <a class = "botonMenu" href = "personajes.html" target="_self"> Personajes</a>
+                    <a class = "botonMenu" href = "actividades.html" target="_self"> Actividades</a>
+                    <a class = "botonMenu" href = "historia.html" target="_self"> Historia</a>
+                    <a class = "botonMenu" href = "referencias.html" target="_self"> Referencias/Mapa</a>
+            </nav>
+        </header>
        
         <h2> Actividades </h2><!-- subtítulo -->
-       <div class = "cajita"> <!-- pone el fondo blanco -->
-        <img src="imagenes/coronacion.PNG"  width = "700" alt="">
-        <p class = "texto"> Coronación de la reina Anna de Arendelle</p> 
-        <img src="imagenes/Box-of-Olaf-Gifts-Olafs-Frozen-Adventure.jpg"  width = "700" alt="">
-        <p class = "texto"> El cortometraje hace un buen trabajo haciendo malabares con varias historias, uniendo todos los hilos en un final que hace llorar. Haciendo referencia al momento más famoso de Frozen, las hermanas revelan que incluso cuando se mantuvieron separadas cuando eran niñas, sus recuerdos de construir un muñeco de nieve juntas (Olaf) las mantuvieron conectadas. La referencia devuelve a la audiencia a su reacción emocional inicial a "¿Quieres construir un muñeco de nieve?" y proporciona un cierre para un momento de dolor trágico y no resuelto en la película.</p> 
-        <img src="imagenes/Elsa-Anna-Frozen-Fever-Short.jpg"  width = "700" alt="">
-        <p class = "texto"> Frozen Fever is a great example of the short film genre, using every second of its eight minutes of screen time to show a new aspect of the relationship between Anna and Elsa. The sisters' bond is the heart of Frozen (literally), but what happens after they restart their friendship? Frozen Fever shows that even after the sisters find each other again, it's not all smooth sailing. Ultimately, Frozen Fever just edges out Olaf's Frozen Adventure because of its more compact length and straightforward storyline, even answering a question about the fate of Hans. </p> 
-        <img src="imagenes/Olaf-Once-Upon-A-Snowman-Frozen-Short.jpg"  width = "700" alt="">
-        <p class = "texto"> Once Upon A Snowman es esencialmente un estudio del personaje de Olaf, que responde a una variedad de preguntas sobre quién es y cómo llegó a ser. Una de las mayores revelaciones es sobre cómo Olaf llegó a amar el verano, justificando su canción de 2 minutos en la primera película. El encuentro de Olaf con el Norwegian Oaken lo deja con una nueva pasión y continúa su búsqueda de la nariz perfecta. </p> 
-    </div>
 
-    <p class="footer"> Elaborado por: Ana Sofia Aponte Barriga</p>
+        <div class = "row justify-content-center" >
+            <div class = "cajita col-11 col-md-10 col-xl-10"> <!-- pone el fondo blanco -->
+                <div class = "row justify-content-center">
+                    <div class = "col-12 col-md-8 col-xl-10"> 
+                        <img class="imagen" src="imagenes/coronacion.PNG"  width = "700" alt="">
+                    </div>
+                    <p class = "texto"> Coronación de la reina Anna de Arendelle</p> 
+                    <div class = "col-12 col-md-8 col-xl-10"> 
+                        <img class = "imagen" src="imagenes/Box-of-Olaf-Gifts-Olafs-Frozen-Adventure.jpg"  width = "700" alt="">
+                    </div>
+                    <div class = "col-11 col-md-10 col-xl-12">
+                        <p class = "texto"> El cortometraje hace un buen trabajo haciendo malabares con varias historias, uniendo todos los hilos en un final que hace llorar. Haciendo referencia al momento más famoso de Frozen, las hermanas revelan que incluso cuando se mantuvieron separadas cuando eran niñas, sus recuerdos de construir un muñeco de nieve juntas (Olaf) las mantuvieron conectadas. La referencia devuelve a la audiencia a su reacción emocional inicial a "¿Quieres construir un muñeco de nieve?" y proporciona un cierre para un momento de dolor trágico y no resuelto en la película.</p> 
+                    </div>
+                    
+                    <div class = "col-12 col-md-8 col-xl-10"> 
+                        <img class="imagen" src="imagenes/Elsa-Anna-Frozen-Fever-Short.jpg"  width = "700" alt="">
+                    </div>
+                    <div class = "col-11 col-md-10 col-xl-12">
+                        <p class = "texto"> Frozen Fever is a great example of the short film genre, using every second of its eight minutes of screen time to show a new aspect of the relationship between Anna and Elsa. The sisters' bond is the heart of Frozen (literally), but what happens after they restart their friendship? Frozen Fever shows that even after the sisters find each other again, it's not all smooth sailing. Ultimately, Frozen Fever just edges out Olaf's Frozen Adventure because of its more compact length and straightforward storyline, even answering a question about the fate of Hans. </p> 
+                    </div>
+                    
+                    <div class = "col-12 col-md-8 col-xl-10"> 
+                        <img class="imagen" src="imagenes/Olaf-Once-Upon-A-Snowman-Frozen-Short.jpg"  width = "700" alt="">
+                    </div>
+                    <div class = "col-11 col-md-10 col-xl-12">
+                        <p class = "texto"> Once Upon A Snowman es esencialmente un estudio del personaje de Olaf, que responde a una variedad de preguntas sobre quién es y cómo llegó a ser. Una de las mayores revelaciones es sobre cómo Olaf llegó a amar el verano, justificando su canción de 2 minutos en la primera película. El encuentro de Olaf con el Norwegian Oaken lo deja con una nueva pasión y continúa su búsqueda de la nariz perfecta. </p> 
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <p class="footer"> Elaborado por: Ana Sofia Aponte Barriga</p>
 
     </body>
 </html>

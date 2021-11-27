@@ -8,26 +8,41 @@ Nacional de Colombia 2021-2 -->
         <meta charset = "UTF-8" > <!-- configuración de idioma -->
         <meta lang = "es" >
         <title> Arendelle - Ubicación </title>
-        <link href="estilos.css" rel = "stylesheet" type="text/css"> <!-- llamo los estilos-->
         <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon" > <!-- icono de la pestaña-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> <!-- link de bootstrap-->
+        <link href="estilos.css" rel = "stylesheet" type="text/css"> <!-- llamo los estilos-->
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
     </head>
 
     <body>
         <h1> <a href="index.html" target = "_self"> ARENDELLE </a> </h1><!-- título -->
         
-        <nav class="menunav"> <!-- menu de navegacion-->
-            <a class = "botonMenu" href = "ubicacion.html" target="_self"> Ubicación</a>
-            <a class = "botonMenu" href = "personajes.html" target="_self"> Personajes</a>
-            <a class = "botonMenu" href = "actividades.html" target="_self"> Actividades</a>
-            <a class = "botonMenu" href = "historia.html" target="_self"> Historia</a>
-            <a class = "botonMenu" href = "referencias.html" target="_self"> Referencias</a>
-        </nav>
+        <header> 
+            <input type="checkbox" id="btn-menunav"> <!-- asigno la checkbox del menu-->
+            <label for="btn-menunav" class = "botonMenunav"> ☰ </label> <!-- asigno el boton al menu -->
+            <nav class="menunav"> <!-- menu de navegacion-->
+                    <a class = "botonMenu" href = "ubicacion.html" target="_self"> Ubicación</a>
+                    <a class = "botonMenu" href = "personajes.html" target="_self"> Personajes</a>
+                    <a class = "botonMenu" href = "actividades.html" target="_self"> Actividades</a>
+                    <a class = "botonMenu" href = "historia.html" target="_self"> Historia</a>
+                    <a class = "botonMenu" href = "referencias.html" target="_self"> Referencias/Mapa</a>
+            </nav>
+        </header>
        
         <h2> Ubicación </h2> <!-- subtítulo -->
-       <div class = "cajita"> <!-- pone el fondo blanco -->
-        <img src="imagenes/mapa.png"  width = "700" alt="Mapa de Arendelle">
-        <p class = "texto"> Arendelle se encuentra cerca de un fiordo, por lo que es un centro comercial viable. Su población se concentra densamente dentro del perímetro castillo, aunque hay actividad humana de menor importancia en los bosques fuera de las zonas de Arendelle.<br> También hay poblaciones no humanas, tales como los lobos en el bosque y los trolls en el Valle de las rocas vivientes. Además de la zona de los fiordos y bosques, Arendelle también está rodeado por una gran cadena montañosa que incluye la Montaña del Norte.<br>El reino está sujeto a cambios de estaciones del año, con veranos cálidos y fríos inviernos. En el invierno, hay una disminución notable en la vida vegetal y la actividad animal. Sin embargo, en el verano, los ecosistemas de Arendelle florecen, con una exuberante vegetación que cubre los lados de los acantilados y las flores que crecen en abundancia. Las aves también son muy activos en esta época del año.Arendelle también está en una posición que es propicio para la observación de las auroras boreales.</p> 
-    </div>
+        <div class = "row justify-content-center" >
+            <div class = "cajita col-11 col-md-10 col-xl-10"> <!-- pone el fondo blanco -->
+                <div class = "row justify-content-center">
+                    <div class = "col-12 col-md-8 col-xl-10"> 
+                        <img class = "imagen" src="imagenes/mapa.png"  width = "700" alt="Mapa de Arendelle">
+                    </div>
+                <div class = "col-11 col-md-10 col-xl-12">
+                    <p class = "texto"> Arendelle se encuentra cerca de un fiordo, por lo que es un centro comercial viable. Su población se concentra densamente dentro del perímetro castillo, aunque hay actividad humana de menor importancia en los bosques fuera de las zonas de Arendelle.<br> También hay poblaciones no humanas, tales como los lobos en el bosque y los trolls en el Valle de las rocas vivientes. Además de la zona de los fiordos y bosques, Arendelle también está rodeado por una gran cadena montañosa que incluye la Montaña del Norte.<br>El reino está sujeto a cambios de estaciones del año, con veranos cálidos y fríos inviernos. En el invierno, hay una disminución notable en la vida vegetal y la actividad animal. Sin embargo, en el verano, los ecosistemas de Arendelle florecen, con una exuberante vegetación que cubre los lados de los acantilados y las flores que crecen en abundancia. Las aves también son muy activos en esta época del año.Arendelle también está en una posición que es propicio para la observación de las auroras boreales.</p> 
+                </div>
+                </div>
+                
+            </div>
+        </div>
 
     <p class="footer"> Elaborado por: Ana Sofia Aponte Barriga</p>
 
