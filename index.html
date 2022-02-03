@@ -20,21 +20,23 @@ Nacional de Colombia 2021-2 -->
             <input type="checkbox" id="btn-menunav"> <!-- asigno la checkbox del menu-->
             <label for="btn-menunav" class = "botonMenunav"> ☰ </label> <!-- asigno el boton al menu -->
             <nav class="menunav"> <!-- menu de navegacion-->
+                    <a class = "botonMenu" href = "index.html" target="_self"> Inicio</a>
                     <a class = "botonMenu" href = "ubicacion.html" target="_self"> Ubicación</a>
                     <a class = "botonMenu" href = "personajes.html" target="_self"> Personajes</a>
                     <a class = "botonMenu" href = "actividades.html" target="_self"> Actividades</a>
                     <a class = "botonMenu" href = "historia.html" target="_self"> Historia</a>
-                    <a class = "botonMenu" href = "referencias.html" target="_self"> Referencias/Mapa</a>
+                    <a class = "botonMenu" href = "mapa.html" target="_self"> Mapa</a>
+                    <a class = "botonMenu" href = "referencias.html" target="_self"> Referencias</a>
             </nav>
     </header>
-
-    <div class = "row justify-content-center" >
+    <!-- IMPORTANTE: con la librería de bootstrap, se usan filas y columnas, el ancho de la página está dividido en 12 unidades, por lo que algo que tiene col-12 ocupa todo el ancho de la pantalla. Si una misma fila tiene dos elementos consecutivos que suman más de 12 entonces bootstrap los ubica uno debajo del otro. Si se asignan, por ejemplo, dos objetos de ancho 6, entonces se ubicarán uno al lado del otro y cada uno ocupará la mitad del ancho de la pantalla. Finalmente, col-xx se refiere a las pantallas pequeñas, col-md-xx se refiere a las medianas y col-xl-xx se refiere a las pantallas grandes.-->
+    <div class = "row justify-content-center" > <!-- creo una fila alineada al centro-->
          <div class = "cajita col-11 col-md-10 col-xl-10"> <!-- pone el fondo blanco -->
-            <div class = "row justify-content-center">
-                <div class = "col-12 col-md-8 col-xl-10"> 
+            <div class = "row justify-content-center"> <!-- creo una fila alineada al centro-->
+                <div class = "col-12 col-md-8 col-xl-10"> <!-- para que ocupe todo el ancho de la pantalla, o casi todo según el tamaño-->
                     <img class="imagen" src="imagenes/arendelle.jpg" alt="Imagen de Arendelle">
                 </div>
-                <div class = "col-11 col-md-10 col-xl-12">
+                <div class = "col-11 col-md-10 col-xl-12"> <!-- para que ocupe todo el ancho de la pantalla, o casi todo según el tamaño-->
                     <p class = "texto"> Arendelle es un reino de la película Frozen con sede cerca de un fiordo, enclavado entre las montañas del extremo norte. El reino es gobernado por la reina Elsa, que ascendió al trono después de que sus padres, Agnarr y Iduna , perecieran en el mar. entre la familia real que aún sobrevive está su hija menor, la princesa Anna. <br><br>Es el reino de las princesas Anna y Elsa, que se encuentra en una tierra inspirada en Noruega. Debido a la naturaleza inestable de los poderes de Elsa, por su seguridad, así como la seguridad de Anna, hasta que Elsa ​​pueda aprender a controlar, el castillo fue cerrado por orden del difunto rey durante 13 años. En el día de la coronación de Elsa, cuando sus habilidades mágicas fueron involuntariamente expuestas al público por Anna y huye, ella dispara accidentalmente las condiciones meteorológicas invernales severas que congelan el reino. Mientras que ella se ha ido y Anna está en busca de ella, Hans asume la tarea de proteger el reino. Sin embargo, gracias a los esfuerzos y el amor por su hermana, Elsa encontró el valor para deshacer el invierno y volver a su puesto de reina.</p> 
                 </div>
             </div>

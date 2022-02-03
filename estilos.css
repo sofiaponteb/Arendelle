@@ -26,10 +26,9 @@ h1{ /*estilo para titulos*/
     font-family: Cinzel ;
     font-weight: bolder;
     color: #551A8B;
-    font-size: 10vw;
+    font-size: 10vw; /* tamaño de letra responsive*/
     text-align: center;
     margin: auto;
-
 }
 
 h1:link { /* para que no subraye los vínculos*/ 
@@ -42,7 +41,17 @@ h2{ /*estilo para subtitulos*/
     font-family: Cinzel ;
     font-weight: bold;
     color: #551A8B;
-    font-size: 8vw;
+    font-size: 8vw; /* tamaño de letra responsive*/
+    text-align: center;
+    margin: auto;
+    margin-top: 20px ;
+}
+
+h3{ /*estilo para subtitulos*/
+    font-family: Cinzel ;
+    font-weight: bold;
+    color: #551A8B;
+    font-size: 4vw; /* tamaño de letra responsive*/
     text-align: center;
     margin: auto;
     margin-top: 20px ;
@@ -65,7 +74,6 @@ a:hover {    /* estilo cuando el cursor está sobre el elemento */
 .texto{ /*estilo para texto*/
     font-family: Poppins ;
     color: black;
-    /*background: rgba(255, 255, 255, 0.5) ;*/
     text-align: justify;
 }
 
@@ -84,14 +92,11 @@ a:hover {    /* estilo cuando el cursor está sobre el elemento */
     background: rgba(255, 255, 255, 0.5) ;
     margin-left: 150pt;
     margin-right: 150pt;
-    /*margin-top: 20pt ;*/
     padding-top: 20pt;
     padding-bottom: 20pt ;
     padding-right: 20pt ;
     padding-left: 20pt ;
 }
-
-
 
 /* botones lindos para la barra de navegación*/
 .botonMenu {
@@ -116,30 +121,33 @@ a:hover {    /* estilo cuando el cursor está sobre el elemento */
 	top:1px;
 }
 
-.botonMenunav{
+.botonMenunav{ /* para que no muestre el texto de rayitas estando en pantalla grande*/
     display: none ;
 }
 
-
-#btn-menunav{
+.botonMenupersonajes{ /* para que no muestre el texto del menú de rayitas de personajes estando en pantalla grande*/
     display: none ;
 }
 
-#btn-menupersonajes{
+#btn-menunav{ /* para que no muestre el menú de rayitas estando en pantalla grande*/
     display: none ;
 }
 
-header{
+#btn-menupersonajes{ /* para que no muestre el menú de rayitas de personajes estando en pantalla grande*/
+    display: none ;
+}
+
+header{ /* encabezado para el menú general*/
     width: 100% ;
     z-index: 10;
 }
 
-ul{
+ul{ /* alineacion de la lista del mapa */
     margin-left: 10px ;
     padding: 10;
 }
 
-li{
+li{ /* alineacion de los items de la lista */
     background-image: none;
     width: 160px ;
     height: 30px ;
@@ -147,15 +155,14 @@ li{
     padding-top: 6px ;
 }
 
-.footer{ /*estilo para texto*/
+.footer{ /*estilo para el texto de créditos*/
     font-family: Poppins ;
     color:thistle;
     text-align: center;
 }
 
-.volver{
+.volver{ /* alineación para el botón */
     margin-right: 20%;
-    /*margin-left: 80%;*/
 }
 
 
@@ -163,17 +170,94 @@ li{
     max-width: 100%;
     height: auto;
 }
+/*//////////////////////// para el mapa interactivo ////////////////////*/
+/* para el div donde va el mapa*/
+.mapa_arendelle{
+    position:relative; 
+	font-size:1.15em;
+	width: 100%;
+	padding: 1%;
+	margin:auto;
+    margin-bottom:15px;
+	/*display:block;*/
+}
+/* boton para el mapa interactivo*/
+.copito{ /* clase para los botones*/
+    max-width: 7%;
+    height: auto;
+}
+
+.copito:hover { /* para que se ponga bonito al acercar el cursor */
+    background-color:white;
+    box-shadow:  3px 0px 27px 7px #ffffff;
+    border-radius:100px;
+}
+
+.btn1{
+    position:absolute;
+	z-index:10;
+    top: 13%;
+	left: 60%;
+}
+
+.btn2{
+    position:absolute;
+	z-index:10;
+    top: 8%;
+	left: 75%;
+}
+
+.btn3{
+    position:absolute;
+	z-index:10;
+    top: 30%;
+	left: 79%;
+}
+
+.btn4{
+    position:absolute;
+	z-index:10;
+    top: 45%;
+	left: 73%;
+}
+
+.btn5{
+    position:absolute;
+	z-index:10;
+    top: 68%;
+	left: 60%;
+}
+
+.btn6{
+    position:absolute;
+	z-index:10;
+    top: 80%;
+	left: 74%;
+}
+
+.btn7{
+    position:absolute;
+	z-index:10;
+    top: 20%;
+	left: 25%;
+}
+
+.video{   /* para los videos de las escenas */
+    width: 100%;
+    aspect-ratio: 16 / 9; /*para que quede del tamano que es*/
+    margin: 10px 0;
+}
 
 /* para cuando la pantalla es pequena */ 
 @media only screen and (max-width: 800px) {
-    .texto {
+    .texto { /* cambio de alineación en el texto*/
         font-family: Poppins ;
         color: black;
         text-align: justify;
         line-height: 1.7;
     }
 
-    header{
+    header{ /* cambia la presentación del menu*/
         display: block ;
         position: absolute ;
         left: 20px ;
@@ -190,12 +274,7 @@ li{
         transition: all 0.5s;
         border-radius: 10px;
     } 
-    .menunav ul { /* menu vertical */
-        flex-direction: column; 
-    } 
-    .menunav li {
-        font-family: Poppins ;
-    }
+
     #btn-menunav:checked ~ .menunav {  /* el checkbox controla las dos posiciones del menu */
         margin: 10px; 
     } 
@@ -205,7 +284,7 @@ li{
         position: absolute;
     } 
 
-    .botonMenu {
+    .botonMenu { /* estilo para los botones del menu */
         box-shadow: 0px 0px 0px 0px #ffffff;
         background-color:transparent;
         border-radius:0px;
@@ -230,7 +309,7 @@ li{
         top:1px;
     }
 
-    .botonMenunav {
+    .botonMenunav { /* estilo para el boton de rayitas*/
         box-shadow: 3px 0px 27px 7px #ffffff;
         background-color:transparent;
         border-radius:42px;
@@ -252,7 +331,7 @@ li{
         top:1px;
     }
 
-    .botonMenupersonajes {
+    .botonMenupersonajes { /* estilo para el boton de rayitas de personajes */ 
         box-shadow: 3px 0px 27px 7px #ffffff;
         background-color:transparent;
         border-radius:42px;
@@ -273,5 +352,76 @@ li{
         position:relative ;
         top:1px;
     }
-}
+
+    /*//////////////////////// para el mapa interactivo ////////////////////*/
+    /* para el div donde va el mapa*/
+    .mapa_arendelle{
+        position:relative; 
+        font-size:1.15em;
+        width: 100%;
+        padding: 1%;
+        margin:auto;
+        margin-bottom:15px;
+        /*display:block;*/
+    }
+    /* boton para el mapa interactivo*/
+    .copito{ /* clase para los botones*/
+        max-width: 7%;
+        height: auto;
+    }
+
+    .copito:hover { /* para que se ponga bonito al acercar el cursor */
+        background-color:white;
+        box-shadow:  3px 0px 27px 7px #ffffff;
+        border-radius:100px;
+    }
+
+    .btn1{
+        position:absolute;
+        z-index:10;
+        top: 13%;
+        left: 60%;
+    }
+
+    .btn2{
+        position:absolute;
+        z-index:10;
+        top: 8%;
+        left: 75%;
+    }
+
+    .btn3{
+        position:absolute;
+        z-index:10;
+        top: 30%;
+        left: 79%;
+    }
+
+    .btn4{
+        position:absolute;
+        z-index:10;
+        top: 45%;
+        left: 73%;
+    }
+
+    .btn5{
+        position:absolute;
+        z-index:10;
+        top: 68%;
+        left: 60%;
+    }
+
+    .btn6{
+        position:absolute;
+        z-index:10;
+        top: 80%;
+        left: 74%;
+    }
+
+    .btn7{
+        position:absolute;
+        z-index:10;
+        top: 20%;
+        left: 25%;
+    }
 }

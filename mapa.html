@@ -1,0 +1,83 @@
+<!doctype html>
+<!-- Primera página web hecha por Ana Sofia Aponte Barriga
+para la materia de gráfica interactiva en la Universidad 
+Nacional de Colombia 2021-2 -->
+
+<html>
+    <head>
+        <meta charset = "UTF-8" > <!-- configuración de idioma -->
+        <meta lang = "es" >
+        <title> Arendelle - Mapa </title>
+        <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon" > <!-- icono de la pestaña-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> <!-- link de bootstrap-->
+        <link href="estilos.css" rel = "stylesheet" type="text/css"> <!-- llamo los estilos-->
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+        <script src="botones-mapa.js"></script> <!-- agrego el codigo de javascript-->
+    </head>
+
+    <body>
+        <h1> <a href="index.html" target = "_self"> ARENDELLE </a> </h1><!-- título -->
+        
+        <header> 
+            <input type="checkbox" id="btn-menunav"> <!-- asigno la checkbox del menu-->
+            <label for="btn-menunav" class = "botonMenunav"> ☰ </label> <!-- asigno el boton al menu -->
+            <nav class="menunav"> <!-- menu de navegacion-->
+                    <a class = "botonMenu" href = "index.html" target="_self"> Inicio</a>
+                    <a class = "botonMenu" href = "ubicacion.html" target="_self"> Ubicación</a>
+                    <a class = "botonMenu" href = "personajes.html" target="_self"> Personajes</a>
+                    <a class = "botonMenu" href = "actividades.html" target="_self"> Actividades</a>
+                    <a class = "botonMenu" href = "historia.html" target="_self"> Historia</a>
+                    <a class = "botonMenu" href = "mapa.html" target="_self"> Mapa</a>
+                    <a class = "botonMenu" href = "referencias.html" target="_self"> Referencias</a>
+            </nav>
+        </header>
+       
+        <h3> Mapa interactivo de Arendelle </h3><!-- subtítulo -->
+        <div class = "row justify-content-center" > <!-- creo una fila alineada al centro-->
+            <div class = "cajita col-11 col-md-10 col-xl-10"> <!-- pone el fondo blanco -->
+               <div class = "row justify-content-center mapa_arendelle"> <!-- creo una fila alineada al centro-->
+                   <div class = "col-10 col-md-10 col-xl-10"> <!-- para que ocupe todo el ancho de la pantalla, o casi todo según el tamaño-->
+
+
+                       <img class="imagen" src="imagenes/interactivo/fotomapa.jpg" alt="Mapa interactivo de Arendelle">
+                       <!-- botones del mapa interactivo con las funciones de javascript-->
+                       <a href = "#titulo" target="_self" id = "boton1" onclick="clickbtn1()"> <img class = "copito btn1" src = "imagenes/interactivo/moradito.gif"> </a> <!-- palacio de hielo-->
+                       <a href = "#titulo" target="_self" id = "boton2" onclick="clickbtn2()"> <img class = "copito btn2" src = "imagenes/interactivo/rosadito.gif"> </a> <!-- miners mountain-->
+                       <a href = "#titulo" target="_self" id = "boton3" onclick="clickbtn3()"> <img class = "copito btn3" src = "imagenes/interactivo/moradito.gif"> </a> <!-- turf house-->
+                       <a href = "#titulo" target="_self" id = "boton4" onclick="clickbtn4()"> <img class = "copito btn4" src = "imagenes/interactivo/rosadito.gif"> </a><!-- oakens house-->
+                       <a href = "#titulo" target="_self" id = "boton5" onclick="clickbtn5()"> <img class = "copito btn5" src = "imagenes/interactivo/rosadito.gif"> </a> <!-- arendelle castle-->
+                       <a href = "#titulo" target="_self" id = "boton6" onclick="clickbtn6()"> <img class = "copito btn6" src = "imagenes/interactivo/moradito.gif"> </a><!-- earth giants passage -->
+                       <a href = "#titulo" target="_self" id = "boton7" onclick="clickbtn7()"> <img class = "copito btn7" src = "imagenes/interactivo/rosadito.gif"> </a><!-- dark sea -->
+                   </div>
+               </div>
+               
+               <div class = "row justify-content-center"> <!-- una fila para poner el titulo-->
+                    <div class = "col-11 col-md-10 col-xl-10">
+                        <h3 id="titulo">Descripción del mapa </h3> <!-- descripcion del mapa o de el boton seleccionado-->
+                    </div>
+               </div>
+               <div class = "row justify-content-center"> <!-- una fila para poner la informacion de los lugares-->
+                <div class = "col-11 col-md-5 col-xl-5 align-self-center">
+                    <p class = "text" id = "descripcion"> <!-- texto explicativo-->
+                        Selecciona los copos de nieve en el mapa para ver escenas de las películas de Frozen que ocurrieron en cada ubicación de Arendelle
+                    </p>
+                </div>
+                <div class = "col-11 col-md-7 col-xl-7"><!-- video escenas -->
+                    <iframe class = "video" id = "escena" 
+                    src = "https://www.youtube.com/embed/Zi4LMpSDccc"
+                    title = "Video de Youtube"
+                    frameborder = "0"
+                    allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen >
+                    </iframe>
+                </div>
+           </div>
+           </div>
+       </div>
+       
+        
+
+        <p class="footer">Elaborado por: Ana Sofia Aponte Barriga</p>
+
+    </body>
+</html>
